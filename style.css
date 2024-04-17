@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+    --white : #fff;
+}
+html{
+    font-size: 18px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container_program_top{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 45vh;
+    background: url(images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.program{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.input_enter{
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.checkIP{
+    width: 20%;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: var(--Very-Dark-Gray);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+    width: 75%;
+    padding: 20px;
+    height: 140px;
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 35%;
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.ceil{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    border-right: 1px solid var(--Very-Dark-Gray);
+    padding-right: 20px;
+    width: 25%;
+    padding: 10px;
+    height: 100%;
+}
+.title_ceil{
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--Dark-Gray);
+}
+.result_ceil{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Gray);
+}
+.nonborder{
+    border: none !important;
+}
+#map{
+    width: 100%;
+    height: 55vh;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}

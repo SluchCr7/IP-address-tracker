@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="program">
+    <div class="container_program_top">
+      <h1 class="title">IP Address Tracker</h1>
+      <div class="input_enter">
+        <input type="text" class="input" id="input" placeholder="192.178.123">
+        <button class="checkIP" id="check">Check</button>
+      </div>
+      <div class="result">
+        <div class="ceil">
+          <span class="title_ceil">IP Address</span>
+          <span class="result_ceil" id="IP">192.178.123.1</span>
+        </div>
+        <div class="ceil">
+          <span class="title_ceil">Location</span>
+          <span class="result_ceil" id="city">California, US</span>
+        </div>
+        <div class="ceil">
+          <span class="title_ceil">Timezone</span>
+          <span class="result_ceil" id="timezone"> -07:00</span>
+        </div>
+        <div class="ceil nonborder">
+          <span class="title_ceil">ISP</span>
+          <span class="result_ceil" id="ISP">Google LLC</span>
+        </div> 
+      </div>
+    </div>
+    <div id="map">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6511980.545439102!2d-124.59221413351302!3d37.160355323932215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2seg!4v1713289947961!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>
